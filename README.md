@@ -4,9 +4,8 @@ Hello, nice to meet you! I'm Tan\[credo\], and this is the repository for my per
 
 ## Planning
 
-|            Requirements             | Implemented? |
-| :---------------------------------: | :----------: |
-|        Use Typescript/React         |     :x:      |
-| Host website (initially) on GitHub. |     :x:      |
+|               Requirements                | Implemented? |
+| :---------------------------------------: | :----------: |
+| Host website (initially) on GitHub Pages. |     :x:      |
 
 Made with :purple_heart: by [Tantan](https://github.com/tancredosouza).
