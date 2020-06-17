@@ -76,12 +76,36 @@ const App = () => {
       </div>
       <div className={classes.footer}>
         <Paper elevation={10} className={classes.paperPadding}>
+          <a href="https://twitter.com/aqueletantan">
+            <img
+              src="https://image.flaticon.com/icons/svg/81/81725.svg"
+              alt="Tan's Twitter Profile"
+              height="40vh"
+              width="40vh"
+            />
+          </a>
           <a href="https://dev.to/tan">
             <img
               src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
               alt="Tan's DEV Profile"
               height="40vh"
               width="40vh"
+            />
+          </a>
+          <a href="https://linkedin.com/in/tancredosouza">
+            <img
+              src="https://image.flaticon.com/icons/svg/61/61109.svg"
+              alt="Tan's LinkedIn Profile"
+              height="36vh"
+              width="36vh"
+            />
+          </a>
+          <a href="https://linkedin.com/in/tancredosouza">
+            <img
+              src="https://image.flaticon.com/icons/svg/25/25231.svg"
+              alt="Tan's Github"
+              height="36vh"
+              width="36vh"
             />
           </a>
         </Paper>
