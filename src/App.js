@@ -37,6 +37,12 @@ const useStyles = makeStyles((theme) => ({
     top: "50%",
     transform: "translate(-50%, -50%)",
   },
+  footer: {
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    textAlign: "center",
+  },
 }));
 
 const App = () => {
@@ -65,6 +71,18 @@ const App = () => {
               </Typography>
             </ThemeProvider>
           </div>
+        </Paper>
+      </div>
+      <div className={classes.footer}>
+        <Paper elevation={10}>
+          <a href="https://dev.to/tan">
+            <img
+              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+              alt="Tan's DEV Profile"
+              height="50vh"
+              width="50vh"
+            />
+          </a>
         </Paper>
       </div>
     </div>
