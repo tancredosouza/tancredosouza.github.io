@@ -115,7 +115,7 @@ const App = () => {
               </a>
             </Grid>
             <Grid item>
-              <a href="https://linkedin.com/in/tancredosouza">
+              <a href="https://github.com/tancredosouza">
                 <img
                   src="https://image.flaticon.com/icons/svg/25/25231.svg"
                   alt="Tan's Github"
