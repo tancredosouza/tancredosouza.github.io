@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   outerBorder: {
     width: "83vw",
-    height: "15.5vh",
+    height: "16vh",
     position: "absolute",
     left: "50%",
     top: "50%",
