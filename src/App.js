@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Paper, Typography, ThemeProvider } from "@material-ui/core";
+import { Paper, Typography, ThemeProvider, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     textAlign: "center",
   },
+  socialIcon: {
+    position: "absolute",
+    height: "85%",
+  },
 }));
 
 const App = () => {
@@ -76,38 +80,48 @@ const App = () => {
       </div>
       <div className={classes.footer}>
         <Paper elevation={10} className={classes.paperPadding}>
-          <a href="https://twitter.com/aqueletantan">
-            <img
-              src="https://image.flaticon.com/icons/svg/81/81725.svg"
-              alt="Tan's Twitter Profile"
-              height="40vh"
-              width="40vh"
-            />
-          </a>
-          <a href="https://dev.to/tan">
-            <img
-              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-              alt="Tan's DEV Profile"
-              height="40vh"
-              width="40vh"
-            />
-          </a>
-          <a href="https://linkedin.com/in/tancredosouza">
-            <img
-              src="https://image.flaticon.com/icons/svg/61/61109.svg"
-              alt="Tan's LinkedIn Profile"
-              height="36vh"
-              width="36vh"
-            />
-          </a>
-          <a href="https://linkedin.com/in/tancredosouza">
-            <img
-              src="https://image.flaticon.com/icons/svg/25/25231.svg"
-              alt="Tan's Github"
-              height="36vh"
-              width="36vh"
-            />
-          </a>
+          <Grid container spacing={3} justify="center">
+            <Grid item>
+              <a href="https://twitter.com/aqueletantan">
+                <img
+                  src="https://image.flaticon.com/icons/svg/81/81725.svg"
+                  alt="Tan's Twitter Profile"
+                  height="40vh"
+                  width="40vh"
+                />
+              </a>
+            </Grid>
+            <Grid item>
+              <a href="https://dev.to/tan">
+                <img
+                  src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+                  alt="Tan's DEV Profile"
+                  height="40vh"
+                  width="40vh"
+                />
+              </a>
+            </Grid>
+            <Grid item>
+              <a href="https://linkedin.com/in/tancredosouza">
+                <img
+                  src="https://image.flaticon.com/icons/svg/61/61109.svg"
+                  alt="Tan's LinkedIn Profile"
+                  height="36vh"
+                  width="36vh"
+                />
+              </a>
+            </Grid>
+            <Grid item>
+              <a href="https://linkedin.com/in/tancredosouza">
+                <img
+                  src="https://image.flaticon.com/icons/svg/25/25231.svg"
+                  alt="Tan's Github"
+                  height="36vh"
+                  width="36vh"
+                />
+              </a>
+            </Grid>
+          </Grid>
         </Paper>
       </div>
     </div>
