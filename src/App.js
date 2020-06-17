@@ -1,12 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import { Paper, Typography, ThemeProvider, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
   paperPadding: {
@@ -14,27 +11,33 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontFamily: "Comfortaa",
-    fontSize: 32,
+    fontSize: 15,
     fontWeight: "bold",
     textAlign: "center",
   },
   subtitle: {
     padding: theme.spacing(2, 0, 0, 0),
+    fontSize: 14,
     textAlign: "center",
   },
   border: {
-    width: "82vw",
+    width: "72vw",
+    height: "13vh",
+    maxWidth: 500,
+    maxHeight: 100,
     position: "absolute",
     left: "50%",
     top: "50%",
     transform: "translate(-50%, -50%)",
   },
   outerBorder: {
-    width: "83vw",
-    height: "13vh",
+    width: "73vw",
+    height: "15vh",
+    maxWidth: 520,
+    maxHeight: 140,
     position: "absolute",
     left: "50%",
-    top: "50%",
+    top: "51%",
     transform: "translate(-50%, -50%)",
   },
   footer: {
@@ -66,11 +69,11 @@ const App = () => {
         />
       </div>
       <div className={classes.border}>
-        <Paper className={classes.paperPadding}>
+        <Paper className={classes.paperPadding} elevation={10}>
           <div className={classes.title}>tancredo</div>
           <div className={classes.subtitle}>
             <ThemeProvider theme={theme}>
-              <Typography variant="h6">
+              <Typography className={classes.subtitle} variant="h6">
                 Changing the world,
                 <br /> one line of clean code at a time.
               </Typography>
