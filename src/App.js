@@ -10,7 +10,7 @@ theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
   paperPadding: {
-    padding: theme.spacing(4, 4),
+    padding: theme.spacing(2, 4),
   },
   title: {
     fontFamily: "Comfortaa",
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   outerBorder: {
     width: "83vw",
-    height: "16vh",
+    height: "13vh",
     position: "absolute",
     left: "50%",
     top: "50%",
