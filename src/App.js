@@ -58,6 +58,7 @@ const App = () => {
             height: "100%",
             position: "absolute",
           }}
+          alt="Rainbow background"
         />
       </div>
       <div className={classes.border}>
@@ -74,13 +75,13 @@ const App = () => {
         </Paper>
       </div>
       <div className={classes.footer}>
-        <Paper elevation={10}>
+        <Paper elevation={10} className={classes.paperPadding}>
           <a href="https://dev.to/tan">
             <img
               src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
               alt="Tan's DEV Profile"
-              height="50vh"
-              width="50vh"
+              height="40vh"
+              width="40vh"
             />
           </a>
         </Paper>
