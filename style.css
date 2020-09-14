@@ -32,7 +32,12 @@
 #main_sign {
   position: relative;
   top: 50%;
-  width: 100%;
+  left: 25%;
+  width: 50%;
+}
+
+#main_sign p {
+  font-family: "Courier New", Courier, monospace;
   margin: 0;
-  justify-content: center;
+  text-align: center;
 }
